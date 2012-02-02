@@ -1,12 +1,12 @@
 Metadata-Version: 1.0
-Name: psycopg2
+Name: pyvertica
 Version: 2.2.1
 Summary: Python-PostgreSQL Database Adapter
 Home-page: http://initd.org/tracker/psycopg
 Author: Federico Di Gregorio
 Author-email: fog@initd.org
 License: GPL with exceptions or ZPL
-Download-URL: http://initd.org/pub/software/psycopg2
+Download-URL: https://github.com/amrik/pyvertica
 Description: psycopg is a PostgreSQL database adapter for the Python programming
         language. This is version 2, a complete rewrite of the original code to
         provide new-style classes for connection and cursor objects and other sweet

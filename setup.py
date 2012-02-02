@@ -412,26 +412,26 @@ else:
 
 sources = map(lambda x: os.path.join('psycopg', x), sources)
 
-ext.append(Extension("psycopg2._psycopg", sources,
+ext.append(Extension("pyvertica._psycopg", sources,
                      define_macros=define_macros,
                      include_dirs=include_dirs,
                      undef_macros=[]))
-setup(name="psycopg2",
+setup(name="pyvertica",
       version=PSYCOPG_VERSION,
       maintainer="Federico Di Gregorio",
       maintainer_email="fog@initd.org",
       author="Federico Di Gregorio",
       author_email="fog@initd.org",
       url="http://initd.org/tracker/psycopg",
-      download_url = "http://initd.org/pub/software/psycopg2",
+      download_url = "https://github.com/amrik/pyvertica",
       license="GPL with exceptions or ZPL",
       platforms = ["any"],
       description=__doc__.split("\n")[0],
       long_description="\n".join(__doc__.split("\n")[2:]),
       classifiers=filter(None, classifiers.split("\n")),
       data_files=data_files,
-      package_dir={'psycopg2':'lib'},
-      packages=['psycopg2'],
+      package_dir={'pyvertica':'lib'},
+      packages=['pyvertica'],
       cmdclass={ 'build_ext': psycopg_build_ext },
       ext_modules=ext)
 
